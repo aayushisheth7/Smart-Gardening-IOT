@@ -114,15 +114,15 @@ smart-gardening-iot/
 ├── README.md                  # This file
 
 
-## 🌐 Applications
+Applications
 
-- **Precision Irrigation Management**: Optimize water usage based on actual plant needs
-- **Early Plant Stress Detection**: Identify water stress before visible symptoms
-- **Nutrient Deficiency Identification**: Detect nutrient issues via spectral signatures
-- **Home & Commercial Gardening**: Suitable for both small and large-scale operations
-- **Agricultural Research**: Study plant-water relationships using spectral data
+- Precision Irrigation Management: Optimize water usage based on actual plant needs
+- Early Plant Stress Detection: Identify water stress before visible symptoms
+- Nutrient Deficiency Identification: Detect nutrient issues via spectral signatures
+- Home & Commercial Gardening: Suitable for both small and large-scale operations
+- Agricultural Research: Study plant-water relationships using spectral data
 
-## 🔮 Future Enhancements
+Future Enhancements
 
 - Real-time web dashboard for monitoring multiple plants
 - Automated irrigation valve control based on predictions
@@ -133,20 +133,20 @@ smart-gardening-iot/
 - Cloud integration for remote farm monitoring
 - Solar-powered deployment for outdoor installations
 
-## 👥 Team
+Team
 
-**MTech Data Science, Semester 1**  
+MTech Data Science, Semester 1  
 Institute of Technology, Nirma University, Ahmedabad, India
 
-- **Aayushi Sheth** (25MCD023) - [@aayushisheth7](https://github.com/aayushisheth7)
+- Aayushi Sheth(25MCD023) - [@aayushisheth7](https://github.com/aayushisheth7)
 - Khushi Patel (25MCD017)
 - Soham Dave (25MCD005)
 
-**Faculty Advisors**:
+Faculty Advisors:
 - Dr. Jaiprakash Verma (Associate Professor)
 - Dr. Sumedha Arora (Assistant Professor)
 
-## 🙏 Acknowledgments
+Acknowledgments
 
 This project was developed as part of the Big Data Systems course at Nirma University, demonstrating the integration of IoT, edge computing, and machine learning for precision agriculture.
 
