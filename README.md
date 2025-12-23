@@ -1,71 +1,71 @@
-# AI and IoT-Enabled Smart Gardening System
+AI and IoT-Enabled Smart Gardening System
 
 An automated smart gardening system that integrates a handheld spectrometer with Raspberry Pi to measure spectral responses of plants and estimate soil moisture using machine learning regression. The system achieves **98.81% prediction accuracy** using Random Forest model.
 
-## 🌱 Overview
+Overview
 
 A spectrometer-based system that captures 18-band spectral reflectances (410nm-940nm) from plant leaves along with environmental data to predict soil moisture levels accurately. The system processes data locally on Raspberry Pi, enabling real-time decision-making for precision agriculture.
 
-## 🎯 Problem Statement
+Problem Statement
 
 Traditional gardening relies on manual inspection and basic sensors, which are time-consuming, inaccurate, and unsuitable for large-scale operations. This leads to inefficient irrigation, delayed disease detection, and improper chemical application. Farmers need an intelligent, real-time monitoring system that works even in low-connectivity areas.
 
-## 🏗️ System Architecture
+System Architecture
 
 The system consists of:
 
-- **Spectrometer**: Captures spectral reflectance data across 18 wavelength bands (410nm-940nm)
-- **Soil Moisture Sensor**: Measures actual soil water content
-- **DHT22 Sensor**: Monitors temperature and humidity
-- **ADS1115 ADC**: Converts analog sensor signals to digital
-- **Raspberry Pi 4**: Acts as edge computing device for data processing and ML inference
+- Spectrometer: Captures spectral reflectance data across 18 wavelength bands (410nm-940nm)
+- Soil Moisture Sensor: Measures actual soil water content
+- DHT22 Sensor: Monitors temperature and humidity
+- ADS1115 ADC: Converts analog sensor signals to digital
+- Raspberry Pi 4: Acts as edge computing device for data processing and ML inference
 
-## 📊 Dataset
+Dataset
 
-- **File**: `final dataset-2 csv.csv`
+- File: `final dataset-2 csv.csv`
 - Contains 18-band spectral reflectance readings from handheld spectrometer
 - Target variable: Soil moisture levels
 - Pre-processed with outlier removal using IQR method
 
-## 🔧 Tech Stack
+Tech Stack
 
-### Hardware
+Hardware
 - Handheld Spectrometer (18 wavelength bands: 410nm-940nm)
 - Raspberry Pi 4 (Edge computing device)
 - DHT22 Temperature & Humidity Sensor
 - Soil Moisture Sensor
 - ADS1115 16-bit ADC
 
-### Software
-- **Python 3.9+**
-- **Jupyter Notebook** for data analysis
-- **Machine Learning**: scikit-learn (Random Forest, SVR)
-- **Data Processing**: pandas, numpy
-- **Visualization**: matplotlib, seaborn
-- **Edge Computing**: Local model deployment on Raspberry Pi
+Software
+- Python 3.9+
+- Colab Notebook for data analysis
+- Machine Learning: scikit-learn (Random Forest, SVR)
+- Data Processing: pandas, numpy
+- Visualization: matplotlib, seaborn
+- Edge Computing: Local model deployment on Raspberry Pi
 
-## 🧪 Methodology
+Methodology
 
-1. **Data Acquisition**: Collected spectral readings and moisture values using handheld spectrometer and sensors
-2. **Data Preprocessing**: Cleaned dataset, removed outliers using IQR method, normalized features
-3. **Feature Analysis**: Analyzed correlations between spectral bands and moisture using scatter plots and polynomial curve fitting
-4. **Model Training**: Trained multiple regression models (Random Forest, SVR) with K-Fold cross-validation
-5. **Evaluation**: Assessed models using MAE, RMSE, and MAPE metrics
+1. Data Acquisition: Collected spectral readings and moisture values using handheld spectrometer and sensors
+2. Data Preprocessing: Cleaned dataset, removed outliers using IQR method, normalized features
+3. Feature Analysis: Analyzed correlations between spectral bands and moisture using scatter plots and polynomial curve fitting
+4. Model Training: Trained multiple regression models (Random Forest, SVR) with K-Fold cross-validation
+5. Evaluation: Assessed models using MAE, RMSE, and MAPE metrics
 
-## 🤖 Machine Learning Models
+Machine Learning Models
 
-### Random Forest Regressor ⭐ (Best Performance)
-- **Configuration**: 300 estimators
-- **Training**: 80-20 train-test split
-- **Validation**: 5-fold K-Fold cross-validation and 10-fold ShuffleSplit
-- **Feature Importance**: Identifies key spectral bands affecting moisture prediction
+Random Forest Regressor(Best Performance)
+- Configuration: 300 estimators
+- Training: 80-20 train-test split
+- Validation: 5-fold K-Fold cross-validation and 10-fold ShuffleSplit
+- Feature Importance: Identifies key spectral bands affecting moisture prediction
 
-### Support Vector Regressor (SVR)
-- **Kernel**: RBF (Radial Basis Function)
-- **Parameters**: C=100, gamma=0.01
-- **Performance**: Evaluated using MAE and RMSE metrics
+Support Vector Regressor (SVR)
+- Kernel: RBF (Radial Basis Function)
+- Parameters: C=100, gamma=0.01
+- Performance: Evaluated using MAE and RMSE metrics
 
-## 📊 Results
+Results
 
 The Random Forest Regressor outperformed other models:
 
@@ -78,7 +78,7 @@ The Random Forest Regressor outperformed other models:
 
 The model successfully captures non-linear relationships between spectral data and soil moisture, even with limited training samples.
 
-## ✨ Key Features
+Key Features
 
 - Real-time soil moisture prediction from spectral data
 - Edge computing for offline operation (works without internet)
@@ -90,7 +90,7 @@ The model successfully captures non-linear relationships between spectral data a
 
 
 
-## 📝 Analysis Workflow
+Analysis Workflow
 
 The notebook (`Untitled5 (5).ipynb`) includes:
 1. **Data Loading**: Import spectral and sensor readings from CSV
